@@ -11,7 +11,7 @@ import TermandCond from './term';
 import About from './aboutus'
 import Privacy from './privacy'
 import Refund from './refund'
-
+import Timeline from './timeline'
 
 function App() {
   return (
@@ -35,6 +35,9 @@ function App() {
        </Route>
        <Route path="/refund" >
          <Refund/>
+       </Route>
+       <Route path="/timeline" >
+         <Timeline/>
        </Route>
      </Switch>
      </Router>

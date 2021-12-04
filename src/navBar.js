@@ -342,6 +342,12 @@ const Navbar = () => {
                 >
                   <p className={classes.mid}>ABOUT US</p>{" "}
                 </Link>
+                <Link
+                  to="/timeline"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  <p className={classes.mid}>Delivery Timeline</p>{" "}
+                </Link>
               {/* <Button variant="outlined" className={classes.btn}>AboutUs</Button>
               <Button variant="outlined" className={classes.btn}>Privacy Policy</Button>
               <Button variant="outlined" className={classes.btn}>Refund&Cancellation</Button>
