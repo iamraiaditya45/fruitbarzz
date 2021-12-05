@@ -18,6 +18,7 @@ import MarkunreadMailboxIcon from '@mui/icons-material/MarkunreadMailbox';
 import PersonIcon from '@mui/icons-material/Person';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import DrawerComponent from "./hamburger.js";
+import { Link } from "react-router-dom";
 
 const drawerWidth = 70;
 
@@ -104,29 +105,42 @@ export default function Material() {
           >
         <Toolbar />
         <div className={classes.drawerContainer}>
-          <List>
-            <ListItem className={classes.menuItems}>
-            <AlignHorizontalCenterIcon className={classes.icon}/>
-            </ListItem>
-          </List>
-          <List>
-            <ListItem>
-            <MarkunreadMailboxIcon className={classes.icon}/>
-            </ListItem>
-          </List><List>
-            <ListItem className={classes.menuItem}>
-                <div className={classes.circle}></div>
-            <CommentIcon className={classes.icon}/>
-            </ListItem>
-          </List><List>
-            <ListItem>
-            <DashboardIcon className={classes.icon}/>
-            </ListItem>
-          </List><List>
-            <ListItem>
-            <PersonIcon className={classes.icon}/>
-            </ListItem>
-          </List>
+        <div className={classes.Left2}>
+              <Link
+                  to="/term"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  <p className={classes.mid}>TERM&CONDITIONS</p>
+                </Link>
+                <Link
+                  to="/refund"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  <p className={classes.mid}>REFUND&CANCELL</p>{" "}
+                </Link>
+                <Link
+                  to="/privacy"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  <p className={classes.mid}>PRIVACY</p>{" "}
+                </Link>
+                <Link
+                  to="/aboutus"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  <p className={classes.mid}>ABOUT US</p>{" "}
+                </Link>
+                <Link
+                  to="/timeline"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  <p className={classes.mid}>Delivery Timeline</p>{" "}
+                </Link>
+              {/* <Button variant="outlined" className={classes.btn}>AboutUs</Button>
+              <Button variant="outlined" className={classes.btn}>Privacy Policy</Button>
+              <Button variant="outlined" className={classes.btn}>Refund&Cancellation</Button>
+              <Button variant="outlined" className={classes.btn}>Terms&Condition</Button> */}
+                  </div>
         </div>
           </Drawer>
           </>

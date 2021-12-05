@@ -183,46 +183,37 @@ active:{
         open={openDrawer}
         onOpen={() => setOpenDrawer(true)}>
         <List>
-
-        <ListItem className={classes.top} divider button onClick={() => setOpenDrawer(false)}>
-            <ListItemIcon  >
-            <img src={Rohit} className={classes.rohit}/>
-            <img className={classes.manC} src={AC}/>
-                <div className={classes.shawn}>
-      <p className={classes.signUp}>Suntex</p>
-      <KeyboardArrowDownIcon className={classes.arrowDown}/>
-      </div>
-              {/* </div> */}
-            </ListItemIcon>
-          </ListItem>
-          <ListItem  className={classes.iconBox} divider button onClick={() => setOpenDrawer(false)}>
-            <ListItemIcon>
-            <Button variant="outlined" className={classes.btn}><AlignHorizontalCenterIcon className={classes.newIcon}/></Button>
-            </ListItemIcon>
-          </ListItem>
-
-          <ListItem className={classes.iconBox} divider button onClick={() => setOpenDrawer(false)}>
-            <ListItemIcon>
-            <Button variant="outlined" className={classes.btn}><MarkunreadMailboxIcon/></Button>
-            </ListItemIcon>
-          </ListItem>
-
-          <ListItem className={classes.iconBox} divider button onClick={() => setOpenDrawer(false)}>
-            <ListItemIcon>
-            <Button variant="outlined" className={classes.btn}><CommentIcon/></Button>
-            </ListItemIcon>
-          </ListItem>
-
-          <ListItem className={classes.iconBox} divider button onClick={() => setOpenDrawer(false)}>
-            <ListItemIcon>
-            <Button variant="outlined" className={classes.btn}><DashboardIcon/></Button>
-            </ListItemIcon>
-          </ListItem>
-          <ListItem className={classes.iconBox} divider button onClick={() => setOpenDrawer(false)}>
-            <ListItemIcon>
-            <Button variant="outlined" className={classes.btn}><PersonIcon/> </Button>
-            </ListItemIcon>
-          </ListItem>
+        <Link
+                  to="/term"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  <p className={classes.mid}>TERM&CONDITIONS</p>
+                </Link>
+                <Link
+                  to="/refund"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  <p className={classes.mid}>REFUND&CANCELL</p>{" "}
+                </Link>
+                <Link
+                  to="/privacy"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  <p className={classes.mid}>PRIVACY</p>{" "}
+                </Link>
+                <Link
+                  to="/aboutus"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  <p className={classes.mid}>ABOUT US</p>{" "}
+                </Link>
+                <Link
+                  to="/timeline"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  <p className={classes.mid}>Delivery Timeline</p>{" "}
+                </Link>
+            
 
         </List>
       </Drawer>
