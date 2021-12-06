@@ -12,10 +12,12 @@ import About from './aboutus'
 import Privacy from './privacy'
 import Refund from './refund'
 import Timeline from './timeline'
+const TITLE = 'FRUITBAR'
 
 function App() {
   return (
     <>
+
     <Router>
      <Switch>
      <Route  path exact="/">

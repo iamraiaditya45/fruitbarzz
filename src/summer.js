@@ -111,10 +111,10 @@ const Hero = () => {
                <CardContent>
               <div className={classes.price}>
               <Typography className={classes.nameFruit} variant="h5">
-                Orange
+                Apple
               </Typography>
               <Typography className={classes.priceFruit} variant="h5">
-                30/kg
+                130/kg
               </Typography>
               </div>
             </CardContent>
@@ -134,10 +134,10 @@ const Hero = () => {
        <CardContent>
               <div className={classes.price}>
               <Typography className={classes.nameFruit} variant="h5">
-                Orange
+                Tomato
               </Typography>
               <Typography className={classes.priceFruit} variant="h5">
-                30/kg
+                40/kg
               </Typography>
               </div>
             </CardContent>
@@ -158,10 +158,10 @@ const Hero = () => {
          <CardContent>
               <div className={classes.price}>
               <Typography className={classes.nameFruit} variant="h5">
-                Orange
+                Peach
               </Typography>
               <Typography className={classes.priceFruit} variant="h5">
-                30/kg
+                350/kg
               </Typography>
               </div>
             </CardContent>
@@ -182,10 +182,10 @@ const Hero = () => {
        <CardContent>
               <div className={classes.price}>
               <Typography className={classes.nameFruit} variant="h5">
-                Orange
+                Peach
               </Typography>
               <Typography className={classes.priceFruit} variant="h5">
-                30/kg
+                350/kg
               </Typography>
               </div>
             </CardContent>
@@ -203,9 +203,14 @@ const Hero = () => {
           title="Contemplative Reptile"
         />
         <CardContent>
+        <div className={classes.price}>
           <Typography className={classes.nameFruit} variant="h5" component="h2">
-            Lizard
+            Pineapple
           </Typography>
+          <Typography className={classes.priceFruit} variant="h5">
+                75/kg
+              </Typography>
+</div>
         </CardContent>
       </CardActionArea>
       <CardActions>
@@ -271,10 +276,10 @@ const Hero = () => {
          <CardContent>
               <div className={classes.price}>
               <Typography className={classes.nameFruit} variant="h5">
-                Orange
+                Strawberry
               </Typography>
               <Typography className={classes.priceFruit} variant="h5">
-                30/kg
+                750/kg
               </Typography>
               </div>
             </CardContent>
